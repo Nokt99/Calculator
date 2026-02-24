@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NERD POWER C</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/algebrite@1.5.0/dist/algebrite.bundle-for-browser.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>NERD POWER C</h1>
+
+  <input id="expression" placeholder="Type anything. Equations. Variables. Calculus. Matrices." />
+
+  <div class="mode-bar">
+    <button data-mode="normal">Normal</button>
+    <button data-mode="decimal">Decimal</button>
+    <button data-mode="fraction">Fraction</button>
+    <button data-mode="mixed">Mixed</button>
+    <button data-mode="scientific">Scientific</button>
+    <button data-mode="engineering">Engineering</button>
+    <button data-mode="remainder">Remainder</button>
+  </div>
+
+  <div class="action-bar">
+    <button data-action="solve">Solve</button>
+    <button data-action="simplify">Simplify</button>
+    <button data-action="expand">Expand</button>
+    <button data-action="factor">Factor</button>
+    <button data-action="derivative">Derivative</button>
+    <button data-action="integral">Integral</button>
+    <button data-action="limit">Limit</button>
+    <button data-action="graph">Graph</button>
+    <button data-action="matrixdet">Det</button>
+    <button data-action="matrixinv">Inverse</button>
+    <button id="angleToggle">Deg</button>
+    <button id="precisionUp">+</button>
+    <button id="precisionDown">-</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div id="result"></div>
+  <div id="history"></div>
+  <div id="graph"></div>
+
+</div>
+
+<script src="engine.js"></script>
+<script src="app.js"></script>
+<script src="ui.js"></script>
+
+</body>
+</html>
