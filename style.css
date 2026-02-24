@@ -1,0 +1,55 @@
+body {
+  background: #0a0a0a;
+  color: #00ff88;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1000px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background: black;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+}
+
+button {
+  margin: 4px;
+  padding: 8px 12px;
+  background: black;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  cursor: pointer;
+}
+
+button.active {
+  background: #00ff88;
+  color: black;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+  min-height: 30px;
+}
+
+#history {
+  margin-top: 20px;
+  font-size: 14px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#graph {
+  margin-top: 30px;
+}
